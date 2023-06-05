@@ -9,8 +9,8 @@ import android.view.View
 import com.paintapp.PaintView.Companion.colorList
 import com.paintapp.PaintView.Companion.pathList
 import com.paintapp.common.extensions.showToast
-import com.paintapp.databinding.ActivityMainBinding
 import com.paintapp.PaintView.Companion.selectedBrushColor
+import com.paintapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding.redColorPalette.setOnClickListener(redPaletteColorClickListener)
         binding.greenColorPalette.setOnClickListener(greenPaletteColorClickListener)
         binding.blueColorPalette.setOnClickListener(bluePaletteColorClickListener)
+        binding.purpleColorPalette.setOnClickListener(purplePaletteColorClickListener)
         binding.blackColorPalette.setOnClickListener(blackPaletteColorClickListener)
         binding.eraser.setOnClickListener(eraserClickListener)
     }
@@ -52,6 +53,12 @@ class MainActivity : AppCompatActivity() {
     private val bluePaletteColorClickListener = View.OnClickListener {
         showToast("Blue Color Selected")
         brush.color = Color.BLUE
+        currentColor(brush.color)
+    }
+
+    private val purplePaletteColorClickListener = View.OnClickListener {
+        showToast("Purple Color Selected")
+        brush.color = Color.argb(100,148, 3, 252)
         currentColor(brush.color)
     }
 
