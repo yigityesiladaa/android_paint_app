@@ -13,7 +13,7 @@ Name  | Version
 Kotlin | 1.8.0
 </p>
 
-## App Gifs
+### App Gifs
 
 Painting  | 
 ------------- | 
