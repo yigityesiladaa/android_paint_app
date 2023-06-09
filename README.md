@@ -19,7 +19,7 @@ Painting  |
 ------------- | 
 <a><img src="https://github.com/yigityesiladaa/android_paint_app/blob/main/app_gifs/home.gif" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400"/></a> 
 
-## App Display Images
+### App Display Images
 
 Home (Empty)  | Home (Painted)
 ------------- | ------------- 
